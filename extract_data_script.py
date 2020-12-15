@@ -1,6 +1,7 @@
 import os
 import pandas as pd
 import time
+from decouple import config
 
 from googleapiclient.discovery import build
 
@@ -108,7 +109,7 @@ def store_data(data):
 
 def main():
   # setting Youtube API_KEY
-  api_key = os.environ.get('YOUTUBE_V3_API_KEY')
+  api_key = config('API-KEY')
 
   # TODO: Reconfigure how env variable is accessed. 
   #       Use Resource: https://able.bio/rhett/how-to-set-and-get-environment-variables-in-python--274rgt5#:~:text=To%20set%20and%20get%20environment%20variables%20in%20Python%20you%20can,Get%20environment%20variables%20USER%20%3D%20os.
