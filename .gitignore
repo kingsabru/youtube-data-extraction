@@ -19,3 +19,4 @@ ipython_config.py
 
 # User ignore files
 *.csv
+.env

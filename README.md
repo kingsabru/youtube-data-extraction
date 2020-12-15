@@ -1,6 +1,38 @@
-# How to create and access password and secret keys from system environment
+# Extracting Video Data Using Youtube API V3
+## Task
+Write a script that extracts YouTube data to analyze the #endsars# trend that rocked the entire world.
+The script should be able to perform the following:
+* Filter out channels and playlists.
+* Get only videos published this year.
+* Include videos that are between 4 to 20 mins long.
+* Generic such that the search query can be changed.
+
+### Output
+Store the output into a csv with the filename having the following format: current_timestamp_youtube_data.
+
+The following video attributes should be a part of the dataset:
+* the time video was published
+* the video id
+* the title of the video
+* description
+* the URL of the video thumbnail
+* number of views
+* number of likes
+* number of dislikes
+* number of comments
+
+Create an additional the column that builds the video URL using the video id.
+## Setup
+### Pre-requisites
+* Pandas
+* google-api-python-client
+* Youtube V3 API Key
+
+### Installations
+
+## How to create and access password and secret keys from system environment
 url: https://youtu.be/IolxqkL7cD8
-# Setup
+
 ## Generate API Credentials
 ## Store API Key in system environment
 ## Uncomment API_KEY variable
